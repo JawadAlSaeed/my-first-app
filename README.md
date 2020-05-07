@@ -1,6 +1,11 @@
 # MyFirstApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+This is training project for me and my friends in angular
+
+
+
+# additonal info
+---
 
 ## Development server
 
