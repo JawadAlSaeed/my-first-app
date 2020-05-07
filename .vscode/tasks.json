@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "install",
+			"problemMatcher": [],
+			"label": "npm: install",
+			"detail": "install dependencies from package"
+		},
+		{
+			"type": "npm",
+			"script": "e2e",
+			"problemMatcher": [],
+			"label": "npm: e2e",
+			"detail": "ng e2e",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
