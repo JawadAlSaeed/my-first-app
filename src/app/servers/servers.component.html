@@ -1,5 +1,16 @@
-<button type="button" class="btn btn-primary" [disabled]="!allowNewServer">
+<!--   <p> {{ allowNewServer }} </p> String Interpolation -->
+<!-- <button (click)=""> hello </button> Event Binding -->
+<!-- <button [innerText]=""> hello </button> Property Binding -->
+<label>Server Name</label>
+<input type="text" class="from-control" (input)="onUpdateServerName($event)" />
+<p>{{ serverName }}</p>
+<button
+  type="button"
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()"
+>
   Add Server
 </button>
-
+<p>{{ serverCreationStatus }}</p>
 <app-server></app-server> <app-server></app-server>
