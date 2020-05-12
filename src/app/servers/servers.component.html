@@ -1,9 +1,10 @@
-<!--   <p> {{ allowNewServer }} </p> String Interpolation -->
+/<!--   <p> {{ allowNewServer }} </p> String Interpolation -->
 <!-- <button (click)=""> hello </button> Event Binding -->
 <!-- <button [innerText]=""> hello </button> Property Binding -->
+<!-- <button [(ngModel)]=""> hello </button> Property Binding -->
 <label>Server Name</label>
 <input type="text" class="from-control" (input)="onUpdateServerName($event)" />
-<p>{{ serverName }}</p>
+<!-- <p>{{ serverName }}</p> -->
 <button
   type="button"
   class="btn btn-primary"
@@ -12,5 +13,8 @@
 >
   Add Server
 </button>
-<p>{{ serverCreationStatus }}</p>
+<!-- <p>{{ serverCreationStatus }}</p> -->
+<p *ngIf="serverCreation">
+  Server was created! the server name {{ serverName }}
+</p>
 <app-server></app-server> <app-server></app-server>
